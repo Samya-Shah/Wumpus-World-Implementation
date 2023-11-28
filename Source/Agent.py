@@ -168,9 +168,9 @@ class BrainofAgent:
 
 
     def backtracking_search(self):
-        # If there is a Pit, Agent dies.
+        
         self.agent_cell.generate_perception()
-
+        # If there is a Pit, Agent dies.
         if self.agent_cell.has_pit():
             self.add_action(Action.PLUNGE_INTO_PIT)
             return False
