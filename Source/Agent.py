@@ -3,30 +3,6 @@ import copy
 import GameCell
 import KnowledgeBase
 
-class Action(Enum):
-    GO_LEFT= 1
-    GO_RIGHT = 2
-    GO_UPWARDS = 3
-    GO_DOWNWARDS = 4
-    PROCEED = 5
-    COLLECT_GOLD = 6
-    SENSE_BREEZE = 7
-    SENSE_STENCH = 8
-    FIRE_ARROW = 9
-    DEFEAT_WUMPUS = 10
-    BE_CONSUMED_BY_WUMPUS = 11
-    PLUNGE_INTO_PIT = 12
-    ELIMINATE_WUMPUS_AND_READY_TO_ESCAPE_CAVE = 13
-    EXIT_CAVE = 14
-    DISCOVER_PIT = 15
-    DISCOVER_WUMPUS = 16
-    DISCOVER_NO_PIT = 17
-    DISCOVER_NO_WUMPUS = 18
-    DEDUCE_PIT = 19
-    DEDUCE_NOT_PIT = 20
-    DEDUCE_WUMPUS = 21
-    DEDUCE_NOT_WUMPUS = 22
-
 class BrainofAgent:
     def __init__(self, map_filename, output_filename):
         self.output_filename = output_filename
@@ -520,4 +496,26 @@ class BrainofAgent:
 
         return self.action_list, self.init_agent_cell, self.init_cell_matrix
 
-    
+ class Action(Enum):
+    GO_LEFT= 1
+    GO_RIGHT = 2
+    GO_UPWARDS = 3
+    GO_DOWNWARDS = 4
+    PROCEED = 5
+    COLLECT_GOLD = 6
+    SENSE_BREEZE = 7
+    SENSE_STENCH = 8
+    FIRE_ARROW = 9
+    DEFEAT_WUMPUS = 10
+    BE_CONSUMED_BY_WUMPUS = 11
+    PLUNGE_INTO_PIT = 12
+    ELIMINATE_WUMPUS_AND_READY_TO_ESCAPE_CAVE = 13
+    EXIT_CAVE = 14
+    DISCOVER_PIT = 15
+    DISCOVER_WUMPUS = 16
+    DISCOVER_NO_PIT = 17
+    DISCOVER_NO_WUMPUS = 18
+    DEDUCE_PIT = 19
+    DEDUCE_NOT_PIT = 20
+    DEDUCE_WUMPUS = 21
+    DEDUCE_NOT_WUMPUS = 22   
